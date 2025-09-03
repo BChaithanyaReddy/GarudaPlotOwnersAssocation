@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Garuda Association</title>
+  <style>
+    body { margin:0; font-family: sans-serif; line-height:1.6; }
+    header {
+      background:#003366; 
+      color:white; 
+      padding:1em; 
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center; 
+      flex-wrap:wrap;
+    }
+    header nav a { 
+      margin:0 0.75em; 
+      color:white; 
+      text-decoration:none; 
+      font-weight:500; 
+    }
+    .highlighted {
+      background: #ffd700;
+      color: #003366 !important;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .hero { background:#00509e; color:white; padding:4em 1em; text-align:center; }
+    section { padding:3em 1em; }
+    footer { background:#222; color:#ddd; text-align:center; padding:1em; }
+    @media(max-width:600px) {
+      header { flex-direction:column; align-items:flex-start; }
+    }
+    .funds-table { width:100%; max-width:600px; margin:auto; border-collapse: collapse; }
+    .funds-table th, .funds-table td { border:1px solid #ccc; padding:10px; text-align:center; }
+    .funds-table th { background:#003366; color:white; }
+    .logo {
+      height:60px;
+      margin-right:15px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .blinking-text { animation: blink 1s infinite; }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+    .hero {
+      background-image: url('image1.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
+    }
+    .contact-info {
+      max-width: 600px;
+      margin: auto;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .contact-info p {
+      font-size: 1.1em;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="image2jpeg.jpeg" alt="Garuda Logo" class="logo">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#issues">Issues</a>
+        <a href="#members">Committee Members</a>
+        <a href="#funds">Funds</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#notifications" class="highlighted">Govt Notifications/Orders</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <h1 class="blinking-text">Welcome to Garuda Plot Owners Association, Tirupati</h1>
+    <p>Regd No: 444/2019</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      <span style="background: #ffd700; color: #003366; font-weight: bold; padding: 4px 8px; border-radius: 4px;">
+        Welcome to the Garuda Plot Owners Association official website!
+      </span>
+    </p>
+    <p>
+      We are delighted to have you here. Our association is dedicated to enhancing the living experience in Garuda Plot Owners Association, Tirupati by fostering a sense of community, addressing common concerns, and working collaboratively towards shared goals.
+    </p>
+    <p>
+      Association formed with registration No. 444/2019. We are located at Plot No. 65, Agri Gold Layout, Garudadri Nagar, Chennayagunta Village, Tirupati, Andhra Pradesh.
+    </p>
+    <p>
+      We have about 120 plots in the layout and TUDA Approved Layout vide: L.P.No.42/G1/07, dated: 18-12-2007, situated in Survey No. 213(P) of Chennaiahgunta village of Settipalle Gram Panchayat,Tirupati Urban Mandal and SRO Renigunta.
+    </p>
+  </section>
+
+  <section id="issues">
+    <h2>Issues</h2>
+    <ul>
+      <li>Our Properties are attached by CID and blocked for registrations since 2015.</li>
+      <li>An outsider has come into our venture set up a pig farm and installed a feeding fence inside park area.</li>
+      <li>As you may know our layout was abandoned for many years and all the infrastructure installed earlier are destroyed or stolen, it is high time for everyone to come together for the development of our layout.</li>
+    </ul>
+  </section>
+
+  <section id="members">
+    <h2>Committee Members</h2>
+    <table class="funds-table">
+      <tr>
+        <th>Role</th>
+        <th>Name</th>
+        <th>Mobile</th>
+      </tr>
+      <tr>
+        <td>President</td><td>M.S Soundara Rajan</td><td>944001238</td>
+      </tr>
+      <tr>
+        <td>Vice President</td><td>Tata Rao</td><td>6281473582</td>
+      </tr>
+      <tr>
+        <td>Secretary</td><td>-</td><td>-</td>
+      </tr>
+      <tr>
+        <td>Treasurer</td><td></td><td>-</td>
+      </tr>
+      <tr>
+        <td>Joint Treasurer</td><td>-</td><td>-</td>
+      </tr>
+      <tr>
+        <td>Senior Committee Members</td><td>Mr. AS Purushotam, Mr. Rajagopal, Mr. </td><td>-</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="funds">
+    <h2>Funds Overview</h2>
+    <table class="funds-table">
+      <tr>
+        <th>Total Collected</th>
+        <th>Total Spent</th>
+        <th>Remaining Balance</th>
+      </tr>
+      <tr>
+        <td id="fund-collected">₹0</td>
+        <td><a href="#" id="show-breakdown" style="color:blue; text-decoration:underline;">₹0</a></td>
+        <td id="fund-remaining">₹0</td>
+      </tr>
+    </table>
+
+    <div id="fund-breakdown" style="display:none; margin-top:20px;">
+      <h3>Funds Spent Breakdown</h3>
+      <table class="funds-table">
+        <tr><th>Work Description</th><th>Amount Spent</th></tr>
+        <tr><td>Works yet to start</td><td>0</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>📍 Plot No. 65, Agri Gold Layout, Garudadri Nagar, Chennayagunta Village, Tirupati, Andhra Pradesh</p>
+      <p>📞 +91 9876543210</p>
+      <p>✉️ <a href="mailto:"></a></p>
+    </div>
+  </section>
+
+  <section id="notifications">
+    <h2>Govt Notifications/Orders</h2>
+    <p>Download recent government notifications and orders here.</p>
+    <ul>
+      <li><a href="LayoutPlan.pdf" download>Layout Plan </a></li>
+      <li><a href="GO MS No 21 Govt order.pdf" download>GO MS 21</a></li>
+     
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Garuda Association. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const totalCollected = 100000;
+    const totalSpent = 0;
+    const remaining = totalCollected - totalSpent;
+
+    document.getElementById("fund-collected").textContent = `₹${totalCollected.toLocaleString()}`;
+    document.getElementById("show-breakdown").textContent = `₹${totalSpent.toLocaleString()}`;
+    document.getElementById("fund-remaining").textContent = `₹${remaining.toLocaleString()}`;
+
+    document.getElementById("show-breakdown").addEventListener("click", function (e) {
+      e.preventDefault();
+      const breakdown = document.getElementById("fund-breakdown");
+      breakdown.style.display = (breakdown.style.display === "none" || breakdown.style.display === "") 
+        ? "block" 
+        : "none";
+    });
+  </script>
+</body>
+</html>
