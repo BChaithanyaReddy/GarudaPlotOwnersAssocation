@@ -20,6 +20,7 @@
       color:white; 
       text-decoration:none; 
       font-weight:500; 
+      display:inline-block;
     }
     .highlighted {
       background: #ffd700;
@@ -31,9 +32,30 @@
     .hero { background:#00509e; color:white; padding:4em 1em; text-align:center; }
     section { padding:3em 1em; }
     footer { background:#222; color:#ddd; text-align:center; padding:1em; }
+    
+    /* ✅ Fix mobile layout */
     @media(max-width:600px) {
-      header { flex-direction:column; align-items:flex-start; }
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+      .header-left {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+      }
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
     }
+
     .funds-table { width:100%; max-width:600px; margin:auto; border-collapse: collapse; }
     .funds-table th, .funds-table td { border:1px solid #ccc; padding:10px; text-align:center; }
     .funds-table th { background:#003366; color:white; }
@@ -47,6 +69,7 @@
       display: flex;
       align-items: center;
       gap: 15px;
+      flex-wrap: wrap;
     }
     .blinking-text { animation: blink 1s infinite; }
     @keyframes blink {
@@ -122,7 +145,7 @@
     <ul>
       <li>Our Properties are attached by CID and blocked for registrations since 2015.</li>
       <li>An outsider has come into our venture set up a pig farm and installed a feeding fence inside park area.</li>
-<li>Some plots in the layout are currently submerged in water. We kindly request the affected plot owners to come forward and coordinate with neighboring plot owners to facilitate drainage and clear the water.Your cooperation will help ensure a safer and healthier environment for everyone.</li>
+      <li>Some plots in the layout are currently submerged in water. We kindly request the affected plot owners to come forward and coordinate with neighboring plot owners to facilitate drainage and clear the water.Your cooperation will help ensure a safer and healthier environment for everyone.</li>
       <li>As you may know our layout was abandoned for many years and all the infrastructure installed earlier are destroyed or stolen, it is high time for everyone to come together for the development of our layout.</li>
     </ul>
   </section>
@@ -130,49 +153,26 @@
   <section id="members">
     <h2>Committee Members</h2>
     <table class="funds-table">
-      <tr>
-        <th>Role</th>
-        <th>Name</th>
-        <th>Mobile</th>
-      </tr>
-      <tr>
-        <td>President</td><td>M.S Soundara Rajan</td><td>944001238</td>
-      </tr>
-      <tr>
-        <td>Vice President</td><td>A Bheema Sekhar</td><td>-</td>
-      </tr>
-      <tr>
-        <td>Secretary</td><td>Tata Rao</td><td>6281473582</td>
-
-      </tr>
-      <tr>
-        <td>Treasurer</td><td></td><td>-</td>
-      </tr>
-      <tr>
-        <td>Joint Treasurer</td><td>-</td><td>-</td>
-      </tr>
-      <tr>
-        <td>Senior Committee Members</td><td>Mr. AS Purushotam, Mr. Rajagopal, Mr. Venkata Prasad, Mr. M P Ramachandra Rao etc</td><td>-</td>
-      </tr>
+      <tr><th>Role</th><th>Name</th><th>Mobile</th></tr>
+      <tr><td>President</td><td>M.S Soundara Rajan</td><td>944001238</td></tr>
+      <tr><td>Vice President</td><td>A Bheema Sekhar</td><td>-</td></tr>
+      <tr><td>Secretary</td><td>Tata Rao</td><td>6281473582</td></tr>
+      <tr><td>Treasurer</td><td></td><td>-</td></tr>
+      <tr><td>Joint Treasurer</td><td>-</td><td>-</td></tr>
+      <tr><td>Senior Committee Members</td><td>Mr. AS Purushotam, Mr. Rajagopal, Mr. Venkata Prasad, Mr. M P Ramachandra Rao etc</td><td>-</td></tr>
     </table>
   </section>
 
   <section id="funds">
     <h2>Funds Overview</h2>
-
     <table class="funds-table">
-      <tr>
-        <th>Total Collected</th>
-        <th>Total Spent</th>
-        <th>Remaining Balance</th>
-      </tr>
+      <tr><th>Total Collected</th><th>Total Spent</th><th>Remaining Balance</th></tr>
       <tr>
         <td id="fund-collected">₹0</td>
         <td><a href="#" id="show-breakdown" style="color:blue; text-decoration:underline;">₹0</a></td>
         <td id="fund-remaining">₹0</td>
       </tr>
     </table>
-
     <div id="fund-breakdown" style="display:none; margin-top:20px;">
       <h3>Funds Spent Breakdown</h3>
       <table class="funds-table">
@@ -182,8 +182,7 @@
     </div>
   </section>
 
-
-<section id="contact">
+  <section id="contact">
     <h2>Contact Us</h2>
     <div class="contact-info">
       <p>📍 <a href="https://maps.app.goo.gl/fF4VyiSCwcL197PX8" target="_blank" rel="noopener noreferrer" class="blink">
@@ -192,17 +191,14 @@
       <p>📞 +91 6281473582</p>
       <p>✉️ <a href="mailto:"></a></p>
     </div>
-</section>
-
-
+  </section>
 
   <section id="notifications">
     <h2>Govt Notifications/Orders</h2>
     <p>Download recent government notifications and orders here.</p>
     <ul>
-      <li><a href="LayoutPlan.pdf" download>Layout Plan </a></li>
+      <li><a href="LayoutPlan.pdf" download>Layout Plan</a></li>
       <li><a href="GO MS No 21 Govt order.pdf" download>GO MS 21</a></li>
-     
     </ul>
   </section>
 
